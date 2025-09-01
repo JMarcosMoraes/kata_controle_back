@@ -28,7 +28,7 @@ public class DBService {
 
 	public void instanciaDB() {
 
-		Cliente cli1 = new Cliente(null, "Usuário teste", "111.661.890-74", "usuario@mail.com", encoder.encode("123"));
+		Cliente cli1 = new Cliente(null, "Usuário teste", "111.661.890-74", "usuario@teste.com", encoder.encode("123"));
         cli1.addPerfil(Perfil.ADMIN);
         Cliente cli2 = new Cliente(null, "Marie Curie", "322.429.140-06", "curie@mail.com", encoder.encode("123"));
 		Cliente cli3 = new Cliente(null, "Charles Darwin", "792.043.830-62", "darwin@mail.com", encoder.encode("123"));
