@@ -24,7 +24,7 @@ public class TarefaService {
     private ModelMapper modelMapper;
 
     public TarefaDTO salvar(TarefaCreateDTO dto) {
-        Projeto projeto = projetoRepository.findById(dto.getIdProjeto())
+        Projeto projeto = projetoRepository.findById(dto.getProjetoId())
                 .orElseThrow(() -> new RuntimeException("Projeto não encontrado"));
 
         Tarefa tarefa = new Tarefa(dto);

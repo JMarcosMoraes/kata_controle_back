@@ -12,7 +12,7 @@ public class  TarefaCreateDTO {
     private String status;
 
     @NotNull
-    private Long idProjeto;
+    private Long projetoId;
 
     // Getters e Setters
 
@@ -40,11 +40,11 @@ public class  TarefaCreateDTO {
         this.status = status;
     }
 
-    public Long getIdProjeto() {
-        return idProjeto;
+    public Long getProjetoId() {
+        return projetoId;
     }
 
-    public void setIdProjeto(Long idProjeto) {
-        this.idProjeto = idProjeto;
+    public void setProjetoId(Long projetoId) {
+        this.projetoId = projetoId;
     }
 }
