@@ -35,6 +35,15 @@ public class Tarefa implements Serializable {
         this.dataCriacao = LocalDateTime.now();
     }
 
+    public Tarefa(Long id, String titulo, String descricao, String status, LocalDateTime dataCriacao, Projeto projeto) {
+        this.id = id;
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.status = status;
+        this.dataCriacao = dataCriacao;
+        this.projeto = projeto;
+    }
+
     public Long getId() {
         return id;
     }

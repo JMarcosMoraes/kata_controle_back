@@ -1,0 +1,10 @@
+-- Inserindo projetos (necessário para chave estrangeira em Tarefa)
+INSERT INTO projeto (id, nome) VALUES (1, 'Projeto Alpha');
+INSERT INTO projeto (id, nome) VALUES (2, 'Projeto Beta');
+
+-- Inserindo tarefas
+ INSERT INTO tarefa (id, titulo, descricao, status, data_criacao, id_projeto) VALUES
+(
+        1, 'Corrigir bugs', 'Corrigir erros críticos no sistema', 'PENDENTE', CURRENT_TIMESTAMP, 1,
+2, 'Criar documentação', 'Documentar os endpoints da API', 'EM_ANDAMENTO', CURRENT_TIMESTAMP, 1),
+3, 'Revisar código', 'Fazer revisão de código do módulo de autenticação', 'CONCLUIDA', CURRENT_TIMESTAMP, 2);
